@@ -1,1 +1,1 @@
-console.log('Lotus Yoga Studio laddad');
+console.log('loaded');
