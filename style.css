@@ -1,124 +1,262 @@
-<!DOCTYPE html>
-<html lang="sv">
+/* ===== RESET ===== */
 
-<head>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* ===== BAS ===== */
 
-<title>Tack för din förfrågan | Lotus Yoga Studio</title>
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #f8f6f2;
+    color: #444;
+    line-height: 1.8;
+    font-size: 18px;
+}
 
-<link rel="stylesheet" href="style.css">
+img {
+    max-width: 100%;
+    display: block;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
-rel="stylesheet">
+/* ===== NAVIGATION ===== */
 
-</head>
+header {
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+}
 
-<body>
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-<header>
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #556b5d;
+}
 
-<nav>
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
 
-<div class="logo">
-Lotus Yoga Studio
-</div>
+nav a {
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
 
-<ul>
+nav a:hover {
+    color: #8d9f8c;
+}
 
-<li><a href="index.html">Hem</a></li>
-<li><a href="produkt-1.html">Yogaklasser</a></li>
-<li><a href="produkt-2.html">Retreats</a></li>
-<li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
-<li><a href="kontakt.html">Kontakt</a></li>
+/* ===== HERO ===== */
 
-</ul>
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-</nav>
+    padding: 60px 20px;
 
-</header>
+    background:
+    linear-gradient(
+        rgba(248,246,242,0.55),
+        rgba(248,246,242,0.75)
+    ),
+    url("https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1600&q=80");
 
-<section class="hero">
+    background-size: cover;
+    background-position: center;
+}
 
-<div class="hero-content">
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #2d3b34;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
 
-<h1>Tack för din förfrågan</h1>
+.hero p {
+    max-width: 700px;
+    margin-bottom: 35px;
+    color: #555;
+    font-size: 1.2rem;
+}
 
-<p>
-Vi har tagit emot din information och återkommer så snart som möjligt.
-</p>
+/* ===== KNAPPAR ===== */
 
-</div>
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    background: #70816f;
+    color: white;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
 
-</section>
+.btn:hover {
+    background: #5c6c5b;
+    transform: translateY(-2px);
+}
 
-<section class="content">
+/* ===== INNEHÅLL ===== */
 
-<img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1400&q=80"
-alt="Meditation">
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 90px 25px;
+}
 
-<h2>Vad händer nu?</h2>
+.content h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+    color: #2d3b34;
+}
 
-<p>
-Vi går igenom din förfrågan och kontaktar dig inom kort.
-Om du har skickat en intresseanmälan för klasser eller retreat får du information om nästa steg via e-post.
-</p>
+.content h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #556b5d;
+}
 
-<p>
-Under tiden är du varmt välkommen att utforska våra yogaklasser och läsa mer om våra kommande retreats.
-</p>
+.content p {
+    margin-bottom: 25px;
+}
 
-<div style="margin-top:40px;">
+.content img {
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
 
-<a href="produkt-1.html" class="btn">
-Se våra klasser
-</a>
+.content ul {
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
 
-&nbsp;&nbsp;
+.content li {
+    margin-bottom: 10px;
+}
 
-<a href="produkt-2.html" class="btn">
-Utforska retreats
-</a>
+/* ===== FORMULÄR ===== */
 
-</div>
+form {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
 
-<h2 style="margin-top:60px;">
-Få inspiration direkt till din inkorg
-</h2>
+label {
+    font-weight: 500;
+}
 
-<p>
-Prenumerera på vårt nyhetsbrev för meditationstips, erbjudanden och inspiration.
-</p>
+input,
+textarea {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 1rem;
+}
 
-<a href="nyhetsbrev.html" class="btn">
-Prenumerera på nyhetsbrev
-</a>
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8d9f8c;
+}
 
-</section>
+/* ===== THANK YOU ===== */
 
-<footer>
+.thankyou {
+    min-height: 80vh;
+    max-width: 900px;
+    margin: auto;
+    padding: 100px 25px;
+    text-align: center;
+}
 
-<div class="container">
+.thankyou h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+    color: #2d3b34;
+}
 
-<h3>Lotus Yoga Studio</h3>
+.thankyou p {
+    margin-bottom: 30px;
+}
 
-<p>
-Storgatan 10, Stockholm
-</p>
+.thankyou img {
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
 
-<p>
-info@lotusyoga.se
-</p>
+/* ===== FOOTER ===== */
 
-<p>
-© 2026 Lotus Yoga Studio
-</p>
+footer {
+    background: #ebe6dd;
+    padding: 50px 20px;
+    text-align: center;
+    color: #666;
+    margin-top: 50px;
+}
 
-</div>
+/* ===== RESPONSIVE ===== */
 
-</footer>
+@media (max-width: 768px) {
 
-</body>
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-</html>
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+    }
+
+    .content h2 {
+        font-size: 1.6rem;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
