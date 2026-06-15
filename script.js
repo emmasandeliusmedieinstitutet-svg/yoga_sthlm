@@ -1,4 +1,1 @@
-function handleSubmit(event) {
-  event.preventDefault();
-  window.location.href = "thank-you.html";
-}
+console.log('loaded');
