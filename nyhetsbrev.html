@@ -1,1 +1,93 @@
-<!DOCTYPE html><html lang='sv'><head><meta charset='UTF-8'><title>Nyhetsbrev</title><link rel='stylesheet' href='style.css'></head><body><h1>Nyhetsbrev</h1></body></html>
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasses Snickeri | Professionellt Hantverk i Stockholm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Lasses <span>Snickeri</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+<li><a href="produkt-1.html">Finsnickeri</a></li>
+<li><a href="produkt-2.html">Köksrenovering</a></li>
+<li><a href="nyhetsbrev.html" class="active">Nyhetsbrev</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hantverkstips & Nyheter</h1>
+            <p>Håll dig uppdaterad med inspiration, guider och exklusiva erbjudanden direkt till din inkorg.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="form-container">
+            <svg class="placeholder-img" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#2980b9"/><text x="50%" y="50%" font-family="Arial" font-size="24" fill="#fff" text-anchor="middle">Hantverkstips & Exklusiva Erbjudanden</text></svg>
+            <h2 style="text-align: center; margin-bottom: 20px;">Prenumerera på vårt nyhetsbrev</h2>
+            
+            <!-- PLATSHÅLLARE FÖR INBÄDDAT FORMULÄR (Mailchimp / HubSpot) -->
+            <form action="thank-you.html" method="GET" id="newsletterForm">
+                <!-- Dolda fält för UTM-spårning/Analys i kursen -->
+                <input type="hidden" name="utm_source" id="form_utm_source" value="">
+                <input type="hidden" name="utm_medium" id="form_utm_medium" value="">
+                <input type="hidden" name="utm_campaign" id="form_utm_campaign" value="">
+                <input type="hidden" name="conversion_type" value="newsletter_signup">
+
+                <div class="form-group">
+                    <label for="reg_name">Förnamn</label>
+                    <input type="text" id="reg_name" name="firstname" class="form-control" placeholder="Ditt förnamn" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reg_email">E-postadress</label>
+                    <input type="email" id="reg_email" name="email" class="form-control" placeholder="din.e-post@bostad.se" required>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Anmäl mig nu</button>
+            </form>
+
+            <div class="marketing-box">
+                <strong>💡 Kursinfo & Analysspårning:</strong><br>
+                Detta formulär är förberett för att mäta konverteringar (Submit Lead). När du kopplar på Mailchimp eller HubSpot kan du ersätta hela standard-&lt;form&gt; koden med deras script-taggar, men behålla klasserna för styling.
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Om Lasses Snickeri</h4>
+                <p>Kvalitet och tradition sedan årtionden. Vi utför allt inom finsnickeri, platsbyggda möbler och kompletta köksrenoveringar i Storstockholm.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Snabblänkar</h4>
+                <p><a href="produkt-1.html" style="color: #fff; text-decoration: none;">Finsnickeri & Möbler</a></p>
+                <p><a href="produkt-2.html" style="color: #fff; text-decoration: none;">Köksrenovering</a></p>
+                <p><a href="nyhetsbrev.html" style="color: #fff; text-decoration: none;">Anmäl Nyhetsbrev</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Analys & Spårning</h4>
+                <p style="opacity: 0.7; font-size: 12px;">Denna webbplats används i utbildningssyfte för kursen Analys och effektmätning. Alla formulär innehåller UTM- och konverteringsförberedda element.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lasses Snickeri AB. Alla rättigheter förbehållna. Kursverktyg för GA4 och Google Ads testning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
